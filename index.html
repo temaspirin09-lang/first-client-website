@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Marrow — Архитектура и интерьеры</title>
+<meta name="description" content="Studio Marrow — бюро архитектуры и интерьерного дизайна. Пространства, которые помнят, зачем их построили.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">M</span>
+      <span class="brand-name">Studio&nbsp;Marrow</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#work">Работы</a>
+      <a href="#process">Процесс</a>
+      <a href="#studio">Бюро</a>
+      <a href="#pricing">Условия</a>
+      <a href="#contact" class="nav-cta">Начать проект</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Архитектурное бюро — с 2014 года</p>
+        <h1 class="hero-title">
+          <span class="reveal" style="--d:0">Пространства,</span><br>
+          <span class="reveal" style="--d:1">которые <em>помнят</em></span><br>
+          <span class="reveal" style="--d:2">зачем их построили.</span>
+        </h1>
+        <p class="hero-sub reveal" style="--d:3">
+          Мы проектируем дома, интерьеры и общественные пространства на стыке
+          инженерной точности и тактильной теплоты материала. От эскиза
+          до последнего гвоздя — один и тот же авторский надзор.
+        </p>
+        <div class="hero-actions reveal" style="--d:4">
+          <a href="#work" class="btn btn-primary">Смотреть проекты</a>
+          <a href="#contact" class="btn btn-ghost">Обсудить проект</a>
+        </div>
+        <dl class="hero-stats reveal" style="--d:5">
+          <div><dt>72</dt><dd>реализованных проекта</dd></div>
+          <div><dt>11</dt><dd>лет практики</dd></div>
+          <div><dt>4</dt><dd>страны</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-sketch" aria-hidden="true">
+        <svg id="blueprint" viewBox="0 0 480 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- floor plan style line drawing, strokes animate on load -->
+          <rect class="bp-line" x="60" y="60" width="360" height="440" rx="2"/>
+          <line class="bp-line" x1="60" y1="230" x2="420" y2="230"/>
+          <line class="bp-line" x1="240" y1="60" x2="240" y2="230"/>
+          <line class="bp-line" x1="60" y1="380" x2="300" y2="380"/>
+          <line class="bp-line" x1="300" y1="230" x2="300" y2="500"/>
+          <circle class="bp-line" cx="150" cy="145" r="34"/>
+          <path class="bp-line" d="M330 230 A90 90 0 0 1 420 320"/>
+          <path class="bp-line" d="M60 380 A70 70 0 0 0 130 450"/>
+          <line class="bp-dim" x1="60" y1="40" x2="420" y2="40"/>
+          <line class="bp-dim" x1="60" y1="30" x2="60" y2="50"/>
+          <line class="bp-dim" x1="420" y1="30" x2="420" y2="50"/>
+          <text class="bp-label" x="205" y="32">14 200 мм</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Жилая архитектура</span><span>·</span>
+      <span>Интерьеры</span><span>·</span>
+      <span>Общественные пространства</span><span>·</span>
+      <span>Реставрация</span><span>·</span>
+      <span>Авторский надзор</span><span>·</span>
+      <span>Жилая архитектура</span><span>·</span>
+      <span>Интерьеры</span><span>·</span>
+      <span>Общественные пространства</span><span>·</span>
+      <span>Реставрация</span><span>·</span>
+      <span>Авторский надзор</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ===== SELECTED WORK ===== -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Портфолио</p>
+        <h2>Избранные проекты</h2>
+      </header>
+
+      <div class="work-grid">
+        <article class="work-card work-card--wide reveal">
+          <div class="work-media">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Гостиная с панорамным остеклением" loading="lazy">
+          </div>
+          <div class="work-info">
+            <h3>Дом на Хвойной</h3>
+            <p>Загородный дом · 240&nbsp;м² · 2023</p>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <div class="work-media">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Минималистичная кухня-гостиная" loading="lazy">
+          </div>
+          <div class="work-info">
+            <h3>Квартира на Малой Ордынке</h3>
+            <p>Интерьер · 98&nbsp;м² · 2023</p>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <div class="work-media">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Спальня с деревянными панелями" loading="lazy">
+          </div>
+          <div class="work-info">
+            <h3>Мансарда «Ковчег»</h3>
+            <p>Интерьер · 64&nbsp;м² · 2022</p>
+          </div>
+        </article>
+
+        <article class="work-card reveal">
+          <div class="work-media">
+            <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=900&q=80" alt="Фасад современного бетонного дома" loading="lazy">
+          </div>
+          <div class="work-info">
+            <h3>Вилла «Береговая»</h3>
+            <p>Архитектура · 310&nbsp;м² · 2021</p>
+          </div>
+        </article>
+
+        <article class="work-card work-card--wide reveal">
+          <div class="work-media">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80" alt="Общественное пространство библиотеки" loading="lazy">
+          </div>
+          <div class="work-info">
+            <h3>Библиотека district&nbsp;9</h3>
+            <p>Общественный интерьер · 540&nbsp;м² · 2020</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section section--dark" id="process">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Как мы работаем</p>
+        <h2>Четыре этапа, один автор</h2>
+      </header>
+
+      <ol class="process-list">
+        <li class="process-item reveal">
+          <span class="process-index">01</span>
+          <div>
+            <h3>Discover — изучение</h3>
+            <p>Разбираем участок, бюджет, сценарии жизни в доме. Формулируем архитектурное задание, с которым нельзя ошибиться.</p>
+          </div>
+        </li>
+        <li class="process-item reveal">
+          <span class="process-index">02</span>
+          <div>
+            <h3>Draft — концепция</h3>
+            <p>Планировки, объём, свет и материалы — в эскизах и 3D. Утверждаем образ до того, как он станет чертежом.</p>
+          </div>
+        </li>
+        <li class="process-item reveal">
+          <span class="process-index">03</span>
+          <div>
+            <h3>Build — рабочая документация</h3>
+            <p>Инженерные разделы, спецификации, сметы. Документ, по которому строит любая квалифицированная бригада.</p>
+          </div>
+        </li>
+        <li class="process-item reveal">
+          <span class="process-index">04</span>
+          <div>
+            <h3>Launch — авторский надзор</h3>
+            <p>Еженедельные выезды на объект. Мы отвечаем за то, чтобы построенное совпало с задуманным — до миллиметра.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== STUDIO / ABOUT ===== -->
+  <section class="section" id="studio">
+    <div class="wrap studio-inner">
+      <div class="studio-media reveal">
+        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80" alt="Архитектор за рабочим столом с чертежами" loading="lazy">
+      </div>
+      <div class="studio-copy reveal">
+        <p class="eyebrow">Бюро</p>
+        <h2>Мы не рисуем красивые картинки — мы проектируем то, что можно построить</h2>
+        <p>
+          Studio Marrow основана в 2014 году как мастерская на четыре стола.
+          Сегодня это команда из архитекторов, интерьерных дизайнеров и
+          инженера-конструктора, которые ведут каждый проект от первого
+          эскиза до сдачи ключей.
+        </p>
+        <p>
+          Мы намеренно берём не больше шести проектов одновременно —
+          чтобы у каждого дома был один и тот же автор на всех этапах,
+          а не команда, которая меняется от совещания к совещанию.
+        </p>
+        <a href="#contact" class="link-arrow">Познакомиться с командой →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section section--dark">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Клиенты</p>
+        <h2>Что говорят те, кто уже живёт в своих домах</h2>
+      </header>
+
+      <div class="slider reveal" id="testiSlider">
+        <div class="slider-track" id="sliderTrack">
+          <blockquote class="slide">
+            <p>«Мы боялись, что архитектор нарисует нам красивый рендер и исчезнет. Вместо этого Studio Marrow приезжала на площадку каждую неделю в течение года».</p>
+            <cite>— Анна и Дмитрий, дом на Хвойной</cite>
+          </blockquote>
+          <blockquote class="slide">
+            <p>«Планировку меняли четыре раза до старта стройки — и ни разу после. Именно так и должна работать подготовка проекта».</p>
+            <cite>— Игорь Р., квартира на Малой Ордынке</cite>
+          </blockquote>
+          <blockquote class="slide">
+            <p>«Смета совпала с реальностью с точностью до 4%. Для стройки в 2022 году это почти чудо».</p>
+            <cite>— Мария К., мансарда «Ковчег»</cite>
+          </blockquote>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="section" id="pricing">
+    <div class="wrap">
+      <header class="section-head reveal">
+        <p class="eyebrow">Условия сотрудничества</p>
+        <h2>Три формата участия</h2>
+      </header>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <h3>Консультация</h3>
+          <p class="price-amount">от 25 000 ₽</p>
+          <p class="price-desc">Разовая встреча на участке или по чертежам. Разбор ошибок и рекомендации.</p>
+          <ul class="price-list">
+            <li>Выезд архитектора, 2 часа</li>
+            <li>Письменное заключение</li>
+            <li>Список подрядчиков</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-block">Записаться</a>
+        </div>
+
+        <div class="price-card price-card--featured reveal">
+          <p class="price-badge">Чаще всего выбирают</p>
+          <h3>Полный проект</h3>
+          <p class="price-amount">от 3 500 ₽ / м²</p>
+          <p class="price-desc">Концепция, рабочая документация, спецификации. Готово к передаче строителям.</p>
+          <ul class="price-list">
+            <li>Архитектурная концепция</li>
+            <li>Полный комплект РД</li>
+            <li>Инженерные разделы</li>
+            <li>2 круга правок</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Обсудить проект</a>
+        </div>
+
+        <div class="price-card reveal">
+          <h3>Проект + надзор</h3>
+          <p class="price-amount">от 4 800 ₽ / м²</p>
+          <p class="price-desc">Всё из «Полного проекта» плюс еженедельное сопровождение стройки.</p>
+          <ul class="price-list">
+            <li>Всё из тарифа «Полный проект»</li>
+            <li>Еженедельные выезды на объект</li>
+            <li>Контроль подрядчиков</li>
+            <li>Приёмка скрытых работ</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost btn-block">Записаться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / CTA ===== -->
+  <section class="section section--dark" id="contact">
+    <div class="wrap contact-inner">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Начать проект</p>
+        <h2>Расскажите нам про участок,<br>дальше — наша работа.</h2>
+        <p class="contact-sub">Ответим в течение одного рабочего дня и предложим ближайшую дату для встречи.</p>
+        <div class="contact-details">
+          <a href="mailto:studio@marrow.example">studio@marrow.example</a>
+          <a href="tel:+70000000000">+7&nbsp;(000)&nbsp;000-00-00</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="budget">Бюджет проекта</label>
+          <select id="budget" name="budget">
+            <option>до 3 млн ₽</option>
+            <option>3–8 млн ₽</option>
+            <option>8–20 млн ₽</option>
+            <option>от 20 млн ₽</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">О проекте</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+        <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">M</span>
+      <span class="brand-name">Studio&nbsp;Marrow</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="#work">Работы</a>
+      <a href="#process">Процесс</a>
+      <a href="#studio">Бюро</a>
+      <a href="#pricing">Условия</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#">Instagram</a>
+      <a href="#">Behance</a>
+      <a href="#">Pinterest</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© 2026 Studio Marrow. Все права защищены.</p>
+    <p>Шаблон разработан для демонстрации — свободен для доработки под клиента.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
